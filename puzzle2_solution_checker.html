@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="solver-style.css">
+    <title>Puzzle 2 Solution Checker</title>
+  </head>
+
+  <body>
+    <h2>Puzzle 2: Test your answer here...</h2>
+
+    <h4>Answer Format: For the 5 words (e.g., Fish, String, Europe, Tin, and Can), list the first letter of each word as one in Capitals (e.g., FSETC)</h4>
+    <br>
+
+    <form action="" name="f1" onsubmit >
+      Your answer: <input type="type" name="clave1" size="20">
+      <br>
+      <br>
+      <input type="button" value="Check" onClick="checkAnswers()">
+
+    </form>
+  </body>
+  <script>
+    function checkAnswers(){
+        // The following is what I changed.
+        Student_answer = document.querySelector('[name="clave1"]').value
+        Teacher_answer = "FURYY"
+
+        if (Student_answer.length === 0 || Teacher_answer.length === 0) {
+            alert("You must enter an answer to continue...");
+            return false;
+        }
+
+        if (Student_answer === Teacher_answer) {
+            alert("CONGRATULATIONS! Your got it right! Now it's time to de-crypt it.");
+            document.body.innerHTML += '<button onclick="window.location.href = \'Puzzle2.html\';">Now to De-Crypt It</button>'
+            //NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
+        } else {
+          const myImage = new Image(800,1104);
+            myImage.src = 'Tokay_Gecko.jpeg';
+            document.body.appendChild(myImage);
+            //NOTE: here the button must be disabled
+        }
+
+    }
+    </script>
+
+
+</html>

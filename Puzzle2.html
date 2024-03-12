@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="homepage-style.css">
+  
+    <title>Puzzle 2</title>
+    <meta charset="UTF-8">
+    
+  </head>
+  
+  <body>
+   
+    <!--Creating the HTML for a nav bar. These will be in a row once we apply CSS. -->
+    <div class="topnav" id="myTopnav">
+      <ul class="container-headnav">
+        <li class="li-top-nav"><a href="Homepage.html">Home</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 1
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle1.html">Puzzle</a>
+            <a href="puzzle1_solution_checker.html">Solution Checker</a>
+            <a href="Puzzle1_Solutions.html">Solution (Are you sure??)</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 2
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle2.html">Puzzle</a>
+            <a href="puzzle2_solution_checker.html">Solution Checker</a>
+            <a href="Puzzle2_Solutions.html">Solution (eh eh eh)</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 3
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle3.html">Puzzle</a>
+            <a href="Puzzle3_Solutions.html">Solution</a>
+          </div>
+        </div>
+        <li class="li-top-nav"><a href="Opening_Letter.html">Letter</a></li>
+     </ul>
+    </div>
+    
+    <!-- Main Title -->
+    <h1 class="container">Puzzle 2: Codenames</h1>
+    
+    <!-- Description: Make both the heading and paragraph part of the same div to apply styling later. -->
+    <div class="container">
+      <h3>Instructions!</h3>
+      <p> Woo! Welcome to the second puzzle! This puzzle is based off of Codenames. I am unsure if 
+        you have played the traditional game before, so I can give a quick run-down here.
+    </br></br> A normal game of Codenames is usually played between two teams: Red and Blue. 
+      Members of a team are split into a team leader and the rest of the group. To start the game,
+       25 codename tiles (see below) are placed on the playing table. The team leaders pull 
+        a gameplay card showing which game board tiles their team is trying to guess. This gameplay card looks
+        like this: </br>
+        <img src="Codenames_Card.png"></br>
+         Leaders give their teams one word hints and a # to help their teams pick the Blue/Red tiles based on the gameplay card.
+         For example, if leaders need their team to guess "Mole", "Spot", and "Face",
+         they might make their codeword "Dermatology - 3". The goal of the game is to get
+         your team to guess as many tiles as possible in the shortest amount of time. </br></br>
+
+         Obviously that is a not possible to play in this format. Instead, this puzzle is a shortened 
+         version of a game. </br> </br>
+         Your goal is to use the colorized list below to match the Red/Blue card and solve for the blank tiles on the gameboard below.
+         Any remaining cards without matches will be the blank tiles. You should expect to see one remaining card in each column. </br> </br>
+
+         Reading left to right, you will be able to create a list of words. For example, if Texas,
+          Chop, Elephant, Marbles, and Lion are the unmatched cards, this will be your list of words.
+          The first letter of each word will create your "solution" to this part of the problem 
+          (e.g., in example above: T,C,E,M,L). </br> </br>
+
+          You can check your answer <a href="puzzle2_solution_checker.html">here</a></br> </br>
+
+          Once you have the correct 5-letter word, you can use the cypher below to de-crypt the location
+          for the next stop.
+    </div>
+
+    <div class="container">
+        <h3>Codenames Board and List</h3>
+        <p> <img src="Codenames_board.png">
+        <p style="color:blue">Singer - 4</br></p>
+        <p style="color:darkred">Netherlands - 3</br></p>
+        <p style="color:blue">HighIQ - 2</br></p>
+        <p style="color:darkred">Cooking - 2</br></p>
+        <p style="color:blue">Fear - 1</br></p>
+        <p style="color:darkred">Games - 3</br></p>
+      </div>
+
+    <div class="container">
+      <h3>Cypher</h3>
+      <p> Use the 5 letter word from above and this cypher to de-crypt where you are off to next:</br> </br>
+        Hello = URYYB
+    </br> </br>
+    This should be pretty easy (think reflection), but I'll include some hints here
+        <ol>
+            <li>A = N</li>
+            <li>B = O</li>
+            <li>M = Z</li>  
+        </ol>
+         If needed answers are listed <a href="Puzzle2_Solutions.html">here</a> if you get stuck :)
+    </div>
+
+    
+    <!-- Finishing off with a footer. -->
+    <script src='homepage.js'></script>
+  </body>
+</html>

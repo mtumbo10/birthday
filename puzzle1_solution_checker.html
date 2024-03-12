@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="solver-style.css">
+    <title>Puzzle 1 Solution Checker</title>
+  </head>
+
+  <body>
+    <h2>Puzzle 1: Test your answer here...</h2>
+
+    <h4>Answer Format:N57.0XXX,E9.9XXX (no spaces and include N/E)</h4>
+    <br>
+
+    <form action="" name="f1" onsubmit >
+      Your answer: <input type="type" name="clave1" size="20">
+      <br>
+      <br>
+      <input type="button" value="Check" onClick="checkAnswers()">
+
+    </form>
+  </body>
+  <script>
+    function checkAnswers(){
+        // The following is what I changed.
+        Student_answer = document.querySelector('[name="clave1"]').value
+        Teacher_answer = "N57.0469,E9.9202"
+
+        if (Student_answer.length === 0 || Teacher_answer.length === 0) {
+            alert("You must enter an answer to continue...");
+            return false;
+        }
+
+        if (Student_answer === Teacher_answer) {
+            alert("CONGRATULATIONS! You got it correct! You can advance to the important information section.");
+            document.body.innerHTML += '<button onclick="window.location.href=\'Puzzle1_Solutions.html\';">Next Steps</button>'
+            //NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
+        } else {
+            const myImage = new Image(800,1104);
+            myImage.src = 'Tokay_Gecko.jpeg';
+            document.body.appendChild(myImage);
+            //NOTE: here the button must be disabled
+        }
+    }
+    </script>
+
+
+</html>

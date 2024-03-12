@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="homepage-style.css">
+  
+    <title>Magician Card Game</title>
+    <meta charset="UTF-8">
+    
+  </head>
+  
+  <body>
+   
+    <!--Creating the HTML for a nav bar. These will be in a row once we apply CSS. -->
+    <div class="topnav" id="myTopnav">
+      <ul class="container-headnav">
+        <li class="li-top-nav"><a href="Homepage.html">Home</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 1
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle1.html">Puzzle</a>
+            <a href="puzzle1_solution_checker.html">Solution Checker</a>
+            <a href="Puzzle1_Solutions.html">Solution (Are you sure??)</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 2
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle2.html">Puzzle</a>
+            <a href="puzzle2_solution_checker.html">Solution Checker</a>
+            <a href="Puzzle2_Solutions.html">Solution (eh eh eh)</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 3
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle3.html">Puzzle</a>
+            <a href="Puzzle3_Solutions.html">Solution</a>
+          </div>
+        </div>
+        <li class="li-top-nav"><a href="Opening_Letter.html">Letter</a></li>
+     </ul>
+    </div>
+    
+    <!-- Main Title -->
+    <h1 class="container">Magician Card Game</h1>
+    
+    <!-- Description: Make both the heading and paragraph part of the same div to apply styling later. -->
+    <div class="container">
+      <h3>Information</h3>
+      <p> In an effort to right the wrong of Magician, I'm tying two games my mom and I created over 
+        this past break to the name. I think you will enjoy them. Card "game" is a bit of an incorrect
+         definition - these are not games similar to golf, but more games you can play to connect with
+          people using a card deck. We have been "playing" this a lot lately, and it's honestly been really fun. </br></br>
+      There are two versions of this game, based on ease, both of which are explained in seperate sections.
+    </div>
+
+    <div class="container">
+        <h3>Magician (Easy)</h3>
+        <p> This version requires no memorization/ list and can be played with any group 2+.</br></br>
+            The rules are super simple:
+            <ol>
+                <li>Shuffle all cards and place them face-down in a pile in the middle of all the players</li>
+                <li>On each turn, a player draws a card.
+                    <ol>
+                        <li>If the card is a spade, the player admits a past regret they have had.</li>
+                        <li>If the card is a club, the player may be asked any one question agreed upon from the other players.</li>
+                        <li>If the card is a diamond, the player will recieve a dare from the other players </li>
+                        <li>If the card is a heart, the player can ask any other player at the table any one question. </li>
+                    </ol>
+                </li>
+                <li>In every scenario, a player must answer the question or take a sip/drink/shot (you decide) of what they are drinking. If not drinking, feel free to assign another out punishment.</li>
+                <li>Play until bored or out of cards lol</li>
+            </ol>
+        </p>
+    </div>
+  
+
+
+    <div class="container">
+      <h3>Magician (Harder)</h3>
+      <p> This version uses a <a href="Puzzle2_Solutions.html">list </a> of card questions across 3 different rounds. Each new round is focused on increasingly deeper levels of questions. This game can also be played with groups of 2+.</br></br>
+
+    The rules are simple:
+        <ol>
+            <li>Shuffle all cards, give each player 5 cards, and place remaining cards  face-down in a pile in the middle of all the players</li>
+            <li>Cards in the main deck are associated with their questions on the master list for the round, but the 5 cards in each players hand can take different values depending on the following:</li>
+            <ol>
+                <li>All cards between 2-9 represent the questions associated with them on their given sheet. Players can play this card by intentionally gifting this card to one other player at the table. The target player must either answer the question or decline with the proper card (see below)</li>
+                <li>All red cards between 10-A represent a player's ability to get another player to dig deeper into their answer. To play, hand to target player on their turn and return card to deck</li>
+                <li>All black cards between 10-A represent a player's ability to avoid answering any question they want. To play, turn question down and return this card to the main deck</li>
+                <li><em>NOTE</em>: Once a card has been returned to the deck, it takes the value of the question associated to it on the round's list</li>
+            </ol>
+            <li>The youngest player begins by pulling the top card from the pile. The player must ask the person to their left the question associated with the card on the list for the round </li> 
+            <li>The player on the left must answer as truthfully as possible or play an avoidance card. If answered, other players may opt to dig deeper or are free to discuss. </li>
+            <li>Gameplay continues to the left. The player on the left may either draw a card for the player next to them, or use one of the questions in their deck.</li>
+            <li>Once all questions are answered in the deck, or the table has played at least 20 cards, the group can move to the next round.</li>
+            <li>Continue to final round </li>
+        </ol>
+    </div>
+
+    
+    <!-- Finishing off with a footer. -->
+    <script src='homepage.js'></script>
+  </body>
+</html>

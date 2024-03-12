@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="homepage-style.css">
+  
+    <title>Homepage</title>
+    <meta charset="UTF-8">
+    
+  </head>
+  
+  <body>
+   
+    <!--Creating the HTML for a nav bar. These will be in a row once we apply CSS. -->
+    <div class="topnav" id="myTopnav">
+      <ul class="container-headnav">
+        <li class="li-top-nav"><a href="Homepage.html">Home</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 1
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle1.html">Puzzle</a>
+            <a href="puzzle1_solution_checker.html">Solution Checker</a>
+            <a href="Puzzle1_Solutions.html">Solution (Are you sure??)</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 2
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle2.html">Puzzle</a>
+            <a href="puzzle2_solution_checker.html">Solution Checker</a>
+            <a href="Puzzle2_Solutions.html">Solution (eh eh eh)</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Puzzle 3
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Puzzle3.html">Puzzle</a>
+            <a href="Puzzle3_Solutions.html">Solution</a>
+          </div>
+        </div>
+        <li class="li-top-nav"><a href="Opening_Letter.html">Letter</a></li>
+     </ul>
+    </div>
+    
+    <!-- Main Title -->
+    <h1 class="container">Homepage</h1>
+    
+    <!-- Description: Make both the heading and paragraph part of the same div to apply styling later. -->
+    <div class="container">
+      <h2>Welcome!</h2>
+      <p>Hoi! Welcome to the insanely archaic, coded attempt at a scavenger hunt. 
+        The scavenger hunt is broken into 3 puzzles listed at the top of the page.
+         Each puzzle will either unlock geographical locations or games. Scrolling 
+         your mouse over each puzzle creates a drop-down list with 3 options:
+         <ol>
+          <li><em>Puzzle</em>: The actual puzzle and instructions</li>
+          <li><em>Solution Checker</em>: A checker to confirm your answers</li>
+          <li><em>Solution</em>: For AFTER you finish the puzzle - includes the solution and any important information you'll need for next steps</li>
+         </ol>
+      <p-2><em>NOTE: The solution page is basically just the answers, so if the coding is wrong, you can just go straight here, but fingers crossed cause it's not as fun</em></p-2>
+      <p>Puzzles #1 and #2 will send you on an adventure to pick up materials. Puzzle #3 will unlock the rules of a new card game...magician (hahaha). </p>
+    </div>
+
+    <div class="container">
+      <h3>Time Estimate</h3>
+      <p>I'm estimating puzzle #1/2 will likely take you ~1hr walking or 30min
+         biking to go, pick-up everything, and get back. The furthest place is
+          25 minutes away (walking, only 7 biking), but I'm assuming you might
+           run into some yappers so I built in extra time to the estimate.
+            Honestly, I am realizing I didn't think of possible hand restrictions,
+             so I would either plan to bike with a backpack/basket or take a
+              friend or two. It should also be easy to split trips, but alack
+               alas lmk if there are issues.
+    </div>
+    
+    <!-- Finishing off with a footer. -->
+    <script src='homepage.js'></script>
+  </body>
+</html>

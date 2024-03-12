@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="homepage-style.css">
+    <title>Puzzle 3</title>
+  </head>
+  
+  <body>
+    <h2>Puzzle 3</h2>
+
+    <h4>What is 1+1?</h4>
+    <br>
+
+    <form action="" name="f1" onsubmit >
+      Your answer: <input type="type" name="clave1" size="20">
+      <br>
+      <br>
+      <input type="button" value="Check" onClick="checkAnswers()">
+
+    </form>
+  </body>
+  <script>
+    function checkAnswers(){
+        // The following is what I changed.
+        Student_answer = document.querySelector('[name="clave1"]').value
+        Teacher_answer = "1"
+
+        if (Student_answer.length === 0 || Teacher_answer.length === 0) {
+            alert("You must enter an answer to continue...");
+            return false;
+        }
+
+        if (Student_answer === Teacher_answer) {
+            alert("WOO!! Great answer! You have unlocked Magician.");
+            document.body.innerHTML += '<button onclick="window.location.href = \'Puzzle3_Solutions.html\';">Magician</button>'
+            //NOTE: here is where the button should be activated and click on it to advance to an hyperlink 
+        } else {
+            alert("Wrong answer, come on, think realistically...");
+            //NOTE: here the button must be disabled
+        }
+
+    }
+    </script>
+
+
+</html>
