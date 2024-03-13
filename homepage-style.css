@@ -95,6 +95,13 @@ body {
     font-size: 17px;
   }
 
+  p-3{
+    text-align: left;
+    font-family: Arial;
+    font-size: 17px;
+  }
+
+
   ol{
     text-align:inherit;
     font-family: Arial;
@@ -272,6 +279,15 @@ body {
       width: 100%;
       text-align: left;
     }
+
+    .card::before{content:attr(data-rank)}
+    .spades::after{content:"\2660"}
+    .hearts::after{content:"\2665";color:red}
+    .diamonds::after{content:"\2666";color:red}
+    .clubs::after{content:"\2663"}
+
   }
+
+
   
   
